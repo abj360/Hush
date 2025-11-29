@@ -1,14 +1,19 @@
 cmake_minimum_required(VERSION 3.15)
-project(Hush)
+
+project(HushMe)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_PREFIX_PATH "/Home/peter/libtorch")
-
+# ---- Torch ----
+set(CMAKE_PREFIX_PATH "/home/peter/libtorch")
 find_package(Torch REQUIRED)
-find_package(SndFile REQUIRED)
 
-add_executable(NoiseCancellation
+# ---- SndFile ----
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(SNDFILE REQUIRED sndfile)
+
+# ---- Executable ----
+add_executable(HushMe
     src/main.cpp
     src/vad.cpp
     src/dsp_utils.cpp
@@ -16,8 +21,17 @@ add_executable(NoiseCancellation
     src/hybrid_processor.cpp
 )
 
-target_link_libraries(Hush  PRIVATE "${TORCH_LIBRARIES}" SndFile::sndfile)
+# ---- Include & link ----
+target_include_directories(HushMe PRIVATE ${SNDFILE_INCLUDE_DIRS})
+target_link_directories(HushMe PRIVATE ${SNDFILE_LIBRARY_DIRS})
 
+target_link_libraries(HushMe PRIVATE
+    "${TORCH_LIBRARIES}"
+    ${SNDFILE_LIBRARIES}
+)
+
+# ---- macOS RPATH fix ----
 if(APPLE)
     set(CMAKE_INSTALL_RPATH "${TORCH_INSTALL_PREFIX}/lib")
 endif()
+

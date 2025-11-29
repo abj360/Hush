@@ -1,0 +1,3 @@
+/home/peter/Hush/build/CMakeFiles/HushMe.dir
+/home/peter/Hush/build/CMakeFiles/edit_cache.dir
+/home/peter/Hush/build/CMakeFiles/rebuild_cache.dir
