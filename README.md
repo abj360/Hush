@@ -6,13 +6,6 @@ We're building a feature rich media processor that is efficient, modular and cro
 
 Today, we support background music filtering and noise removal to enhance audio quality. In the near future, we plan to expand our capabilities by adding support for more ML models and DSP modules, as well as introducing realtime processing to empower you with the tools to take control of the media you consume.
 
-## UI & Demo Video
-
-We offer a minimalistic UI to streamline access to the `MediaProcessor`'s core features.
-
-
----
-
 ## Prerequisites
 
 To get started with `Hush`, ensure that you have the following software installed on your system. These dependencies are necessary for running the backend server, compiling the C++ processor, and handling media files.
