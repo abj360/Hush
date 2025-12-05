@@ -1,6 +1,6 @@
 # Hush
 
-Hush is a cross-platform noise-cancellation engine and media processor designed to give users control over the audio in the content they consume. 
+Hush is a cross-platform noise-cancellation engine designed to give users control over the audio in the content they consume. 
 It provides fast, modular tools for removing background music and filtering unwanted noise, powered by a high-performance C++ processing core and exposed through clean APIs, GHCR-hosted containers, and an intuitive Web UI. The system is built for efficiency and flexibility, making it easy for developers to integrate and for everyday users to clean up video or audio. Future updates will expand the engine with additional ML models, advanced DSP modules, and realtime processing to deliver an even more capable and customizable audio-filtering experience.
 
 ## Prerequisites
