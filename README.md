@@ -1,12 +1,10 @@
 # Hush
 
-We consume, willingly or not, large amounts of media everyday, and that includes content that is emposed on us. `Fast Music Remover` gives you **the choice to opt-out** of them without missing out on the core content.
+We consume, willingly or not, large amounts of media everyday, and that includes content that is emposed on us. `Hush` gives you **the choice to opt-out** of them without missing out on the core content.
 
 We're building a feature rich media processor that is efficient, modular and cross platform. It's being built for you! That means clean APIs for programmers, [containerized on GHCR](https://github.com/omeryusufyagci/fast-music-remover/pkgs/container/fast-music-remover) for remote users, with a Web UI providing seamless access to anyone interested!
 
 Today, we support background music filtering and noise removal to enhance audio quality. In the near future, we plan to expand our capabilities by adding support for more ML models and DSP modules, as well as introducing realtime processing to empower you with the tools to take control of the media you consume.
-
-If this resonates with you, consider [contributing](CONTRIBUTING.md)!
 
 ## UI & Demo Video
 
