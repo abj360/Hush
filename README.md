@@ -1,5 +1,3 @@
-<div align="center">
-
 # Hush
 
 We consume, willingly or not, large amounts of media everyday, and that includes content that is emposed on us. `Fast Music Remover` gives you **the choice to opt-out** of them without missing out on the core content.
@@ -14,7 +12,6 @@ If this resonates with you, consider [contributing](CONTRIBUTING.md)!
 
 We offer a minimalistic UI to streamline access to the `MediaProcessor`'s core features.
 
-</div>
 
 ---
 
